@@ -1,0 +1,42 @@
+[
+  {
+    "title": "EPIC: Core Architecture Setup",
+    "body": "Create base project structure and Spring Boot skeleton",
+    "labels": ["epic"]
+  },
+  {
+    "title": "Create AI Gateway Service",
+    "body": "Spring Boot service hosting Spring AI agent",
+    "labels": ["feature"]
+  },
+  {
+    "title": "Implement MCP Runbook Server",
+    "body": "RAG-style knowledge retrieval from markdown docs",
+    "labels": ["feature"]
+  },
+  {
+    "title": "Implement MCP SQL Server (Safe Templates)",
+    "body": "Read-only SQL access using predefined templates",
+    "labels": ["feature"]
+  },
+  {
+    "title": "Implement MCP FHIR Server",
+    "body": "FHIR validation and summarization using HAPI FHIR",
+    "labels": ["feature"]
+  },
+  {
+    "title": "Add Tool Allowlist & Security Filters",
+    "body": "Prevent unauthorized tool execution",
+    "labels": ["security"]
+  },
+  {
+    "title": "Add OpenTelemetry Tracing",
+    "body": "Distributed tracing across agent and tools",
+    "labels": ["observability"]
+  },
+  {
+    "title": "Create Next.js Web Client",
+    "body": "Chat UI with tool execution trace",
+    "labels": ["frontend"]
+  }
+]
