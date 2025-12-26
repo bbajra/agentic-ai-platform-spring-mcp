@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: ai-gateway-service
+  ai:
+    openai:
+      api-key: ${git s:}
+      chat:
+        options:
+          model: gpt-4o-mini
+
+tools:
+  allowlist:
+    - runbook-search
+    - sql-analytics
+    - fhir-validation
