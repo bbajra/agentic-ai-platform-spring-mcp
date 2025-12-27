@@ -13,9 +13,9 @@ spring:
 info:
   app:
     provider: ${spring.application.name}
-    model: ${app.ai.model}
-    version: ${app.build.version}
-    commit-hash: ${app.build.commit-hash}
+    model: ${spring.ai.ollama.chat.options.model:}
+    version: ${build.version:0.0.0}
+    commit-hash: ${git.commit.id.abbrev:unknown}
 
 management:
   endpoints:
