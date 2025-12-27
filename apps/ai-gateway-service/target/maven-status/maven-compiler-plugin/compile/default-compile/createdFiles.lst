@@ -1,8 +1,9 @@
-com/example/aigateway/service/ChatService.class
 com/example/aigateway/config/AppConfig.class
-com/example/aigateway/controller/ChatController.class
 com/example/aigateway/config/ToolAllowlistProperties.class
+com/example/aigateway/model/ChatResponse$ToolCall.class
+com/example/aigateway/service/ChatService.class
+com/example/aigateway/controller/ChatController.class
+com/example/aigateway/config/AiModelProperties.class
 com/example/aigateway/model/ChatResponse.class
 com/example/aigateway/AiGatewayServiceApplication.class
 com/example/aigateway/model/ChatRequest.class
-com/example/aigateway/model/ChatResponse$ToolCall.class

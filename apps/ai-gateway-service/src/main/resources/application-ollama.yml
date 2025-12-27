@@ -10,12 +10,19 @@ spring:
         options:
           model: llama3.1:8b
 
+app:
+  ai:
+    provider-type: ollama
+    model: ${spring.ai.ollama.chat.options.model:}
+
 info:
   app:
     provider: ${spring.application.name}
-    model: ${spring.ai.ollama.chat.options.model:}
+    provider-type: ${app.ai.provider-type}
+    model: ${app.ai.model}
     version: ${build.version:0.0.0}
     commit-hash: ${git.commit.id.abbrev:unknown}
+    active-profile: ${spring.profiles.active:default}
 
 management:
   endpoints:
