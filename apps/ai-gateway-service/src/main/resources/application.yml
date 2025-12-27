@@ -1,9 +1,11 @@
 spring:
   application:
     name: ai-gateway-service
+  config:
+    import: optional:file:.env[.properties]
   ai:
     openai:
-      api-key: ${git s:}
+      api-key: ${OPENAI_API_KEY:}
       chat:
         options:
           model: gpt-4o-mini

@@ -1,14 +1,14 @@
 spring:
-  application:
-    name: ai-gateway-service
   config:
     import: optional:file:.env[.properties]
+  autoconfigure:
+    exclude: org.springframework.ai.autoconfigure.openai.OpenAiAutoConfiguration
   ai:
-    openai:
-      api-key: ${OPENAI_API_KEY:}
+    ollama:
+      base-url: http://localhost:11434
       chat:
         options:
-          model: gpt-4o-mini
+          model: llama3.1:8b
 
 tools:
   allowlist:

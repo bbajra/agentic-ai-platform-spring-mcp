@@ -55,8 +55,24 @@ This project demonstrates how to safely build AI copilots that can reason, call 
 ---
 
 ## ▶️ Running Locally
+set -a; source ./.env; set +a; mvn -f apps/ai-gateway-service/pom.xml spring-boot:run
 
 ```bash
-docker compose up
 POST http://localhost:8080/api/chat
+```
 
+### Local free model (Ollama)
+Install and run Ollama, then pull a model:
+brew install ollama
+ollama serve
+
+
+```bash
+ollama run llama3.1:8b
+```
+
+Start the app with the Ollama profile:
+
+```bash
+mvn -f apps/ai-gateway-service/pom.xml spring-boot:run -Dspring-boot.run.profiles=ollama
+```
