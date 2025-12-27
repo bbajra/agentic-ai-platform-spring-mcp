@@ -10,6 +10,19 @@ spring:
         options:
           model: gpt-4o-mini
 
+info:
+  app:
+    provider: ${spring.application.name}
+    model: ${spring.ai.openai.chat.options.model:}
+    version: ${build.version:0.0.0}
+    commit-hash: ${git.commit.id.abbrev:unknown}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info,health
+
 tools:
   allowlist:
     - runbook-search

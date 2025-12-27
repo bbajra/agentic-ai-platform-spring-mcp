@@ -10,6 +10,19 @@ spring:
         options:
           model: llama3.1:8b
 
+info:
+  app:
+    provider: ${spring.application.name}
+    model: ${spring.ai.ollama.chat.options.model:}
+    version: ${build.version:0.0.0}
+    commit-hash: ${git.commit.id.abbrev:unknown}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info,health
+
 tools:
   allowlist:
     - runbook-search
