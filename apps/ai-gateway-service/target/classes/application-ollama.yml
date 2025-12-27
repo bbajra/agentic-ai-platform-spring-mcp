@@ -10,6 +10,19 @@ spring:
         options:
           model: llama3.1:8b
 
+info:
+  app:
+    provider: ${spring.application.name}
+    model: ${app.ai.model}
+    version: ${app.build.version}
+    commit-hash: ${app.build.commit-hash}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info,health
+
 tools:
   allowlist:
     - runbook-search
