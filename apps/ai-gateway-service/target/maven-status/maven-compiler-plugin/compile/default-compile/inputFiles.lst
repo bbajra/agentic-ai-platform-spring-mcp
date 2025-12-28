@@ -1,4 +1,6 @@
 /Users/bbajra/src/AI/agentic-ai-platform-spring-mcp/apps/ai-gateway-service/src/main/java/com/example/aigateway/model/ChatResponse.java
+/Users/bbajra/src/AI/agentic-ai-platform-spring-mcp/apps/ai-gateway-service/src/main/java/com/example/aigateway/config/MetaInfoContributor.java
+/Users/bbajra/src/AI/agentic-ai-platform-spring-mcp/apps/ai-gateway-service/src/main/java/com/example/aigateway/controller/MetaController.java
 /Users/bbajra/src/AI/agentic-ai-platform-spring-mcp/apps/ai-gateway-service/src/main/java/com/example/aigateway/config/AiModelProperties.java
 /Users/bbajra/src/AI/agentic-ai-platform-spring-mcp/apps/ai-gateway-service/src/main/java/com/example/aigateway/config/AppConfig.java
 /Users/bbajra/src/AI/agentic-ai-platform-spring-mcp/apps/ai-gateway-service/src/main/java/com/example/aigateway/model/ChatRequest.java

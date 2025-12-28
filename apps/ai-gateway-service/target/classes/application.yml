@@ -15,15 +15,6 @@ app:
     provider-type: openai
     model: ${spring.ai.openai.chat.options.model:}
 
-info:
-  app:
-    provider: ${spring.application.name}
-    provider-type: ${app.ai.provider-type}
-    model: ${app.ai.model}
-    version: ${build.version:0.0.0}
-    commit-hash: ${git.commit.id.abbrev:unknown}
-    active-profile: ${spring.profiles.active:default}
-
 management:
   endpoints:
     web:
