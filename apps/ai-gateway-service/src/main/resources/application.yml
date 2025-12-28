@@ -23,6 +23,11 @@ management:
 
 tools:
   allowlist:
-    - runbook-search
+    - searchRunbooks
     - sql-analytics
     - fhir-validation
+
+runbooks:
+  base-path: ../docs/runbooks
+  max-results: 3
+  snippet-radius: 2
