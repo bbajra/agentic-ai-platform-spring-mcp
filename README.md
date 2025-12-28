@@ -27,6 +27,8 @@ This project demonstrates how to safely build AI copilots that can reason, call 
     - Orchestrates MCP tool calls
 - **MCP Tool Servers**
     - Runbooks / Knowledge (generic)
+      - Runbook: a step-by-step operational guide that documents how the system works,
+        how to troubleshoot it, and how to handle common tasks or incidents.
     - SQL Analytics (safe templates)
     - FHIR Validation (healthcare)
 - **Web Client**
